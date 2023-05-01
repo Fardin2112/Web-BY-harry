@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth child pseudo slecter</title>
+    <style>
+        .container {
+            /* as we know that block amrgin auto used to centre element */
+            display: block;
+            width: 300px;
+            margin: auto;
+        }
+        
+        input{
+            display: block;
+        }
+        /* this will only affect type text even not place holder text */
+        input[type='text']{
+            background-color: red;
+            font-size: large;
+        }
+        a[target]{
+            color:green;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to goggle</a></h1>
+        <!-- this anker tag will not affect by a[target] -->
+        <h1><a href="http://facebook.com">Go to facebook</a></h1>
+        <form action="">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <button type="submit">submit</button>
+
+        </form>
+        <ul>
+            <li class="item" id="iteam1">iteam1</li>
+            <li class="item" id="iteam2">iteam2</li>
+            <li class="item" id="iteam3">iteam3</li>
+            <li class="item" id="iteam4">iteam4</li>
+            <li class="item" id="iteam5">iteam5</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

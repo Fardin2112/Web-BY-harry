@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property</title>
+    <style>
+        /* there is type in position 
+        position:static(default),relative,absoulte ,fixed ,sticky--> */
+        .container{
+            border: 2px solid black;
+            background-color: pink;
+            height: 1000px;
+        }
+        .box {
+            border: 3px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        /* #box3{
+             /* position relative mean relative to its normol position and will leave a gap from its normol positon;  
+             position:relative;
+             top:35px;
+             left: 35px;
+        } */
+        /* #box3 {
+            /* position absulte mean relative to its parent position;  
+            position:absolute;
+            top: 35px;
+            left: 35px;
+        } */
+        #box3{
+            /* int this box will be fixed in that position we can scroll but box will be there */
+            position: fixed;
+            right: 4px;
+            left: 134px;
+            top: 4px;
+        }
+        #box3{
+            /* sticky mean even if we scroll the box will be stick to the psoiton,this type is used in like upper nav bbox */
+            position: sticky;
+            right: 4px;
+            left: 134px;
+            top: 4px;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navaition</title>
+    <style>
+        .navbar{
+            border:2px solid black;
+            background-color: rgb(245, 53, 53);
+            text-transform:uppercase ;
+        }
+        .navbar ul{
+            overflow: auto;
+            
+        }
+        .navbar li{
+            float: left;
+           list-style: none;
+           margin: 10px 10px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 3px 3px;
+        }
+        .navbar li a:hover{
+            color:black;
+        }
+        .Search{
+            float: right;
+            padding: 3px 30px;
+        }
+        .navbar input{
+           border: 2px solid black;
+           border-radius: 20px;
+           font-size: medium;
+           width: 400px;
+           height: 30px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Conatct us</a></li>
+                <div class="Search">
+                    <input type="search" id="Search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

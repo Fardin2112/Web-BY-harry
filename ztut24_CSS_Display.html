@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+    <style>
+        *{
+            /* box-sizing: border-box; */
+        }
+        header{
+            margin: auto;
+            width: 1200px;
+            border: 3px solid black;
+        }
+        img{
+            /* margin auto i did bec i want to centre my photo  */
+            /* display black used bec img is inline element */
+            margin:auto;
+            display: block;
+            width: 90px;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+        .hostname{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration:underline;
+            /* text align used to make centre the text */
+            text-align: center;
+            margin: 0px;
+        }
+        .box{
+            border: 3px solid black;
+            margin: 4px 0px;
+            width: 33%;
+            background-color: grey;
+            padding: 23px;
+            /* dipaly inline block used to make all boxes insame line */
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="top">
+        <img src="https://media.licdn.com/dms/image/C4D03AQHOwbkUpJYn7Q/profile-displayphoto-shrink_400_400/0/1652959796796?e=1686182400&v=beta&t=AgECZAjOqSqFR4Uyikh01hBtZLM4hoSBjKCcP3kg5EA" alt="Network Error">
+        <h3 class="hostname">Fardin's Blog</h3>
+    </div>
+   
+    </header>
+    <body>
+        <div class="container">
+            <div class="box">
+                <h3>heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est mollitia ab iure impedit, nam aspernatur earum reiciendis sapiente nulla minus necessitatibus laborum magni? Ea nulla ex eum ipsa molestiae at possimus, quaerat magnam ducimus porro laudantium consequuntur delectus officiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloremque perspiciatis ipsam rem officiis beatae non quidem ipsa aliquid sunt.</p>
+            </div>
+            <div class="box">
+                <h3>heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est mollitia ab iure impedit, nam aspernatur earum reiciendis sapiente nulla minus necessitatibus laborum magni? Ea nulla ex eum ipsa molestiae at possimus, quaerat magnam ducimus porro laudantium consequuntur delectus officiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloremque perspiciatis ipsam rem officiis beatae non quidem ipsa aliquid sunt.</p>
+            </div>
+            <div class="box">
+                <h3>heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est mollitia ab iure impedit, nam aspernatur earum reiciendis sapiente nulla minus necessitatibus laborum magni? Ea nulla ex eum ipsa molestiae at possimus, quaerat magnam ducimus porro laudantium consequuntur delectus officiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloremque perspiciatis ipsam rem officiis beatae non quidem ipsa aliquid sunt.</p>
+            </div>
+        </div>
+    </body>
+    
+</body>
+</html>

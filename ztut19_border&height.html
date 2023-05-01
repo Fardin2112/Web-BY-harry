@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Border and height</title>
+    <style>
+        #one{
+            background-color: pink;    
+            height: 50px;
+            width: 200px;
+            border-width: 3px;
+            border-color:lightslategray;
+            border-style: solid;
+            border-radius: 10px;
+            /* border radius used to make corner round */
+
+
+        }
+        #second{
+            background-color: pink;
+            border-width: 3px;
+            height: 50px;
+            width: 200px;
+            /* we can use border width,color,or style in just one */
+            border:3px lightslategray solid ;
+            border-radius:10px;
+
+        }
+        #third{
+            background-color:yellow;
+            height: 50px;
+            width: 200px;
+            /* we can separte all border with different color or width */
+            border-top: 3px solid black;
+            border-bottom: 3px solid red ;
+            border-left: 3px solid blue;
+            border-right: 3px solid green;
+
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id="one">this is a pargraph</p>
+    <h3>this is second heahing</h3>
+    <p id="second">this is another paragraph</p>
+    <h3>this is third heading</h3>
+    <p id="third">this is third paragraph</p>
+
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow & Text shadow</title>
+    <style>
+        body {
+            background-color: white;
+        }
+
+        .container {
+            display: flex;
+
+        }
+
+        .card {
+            background-color: white;
+            margin: 28px 24px;
+            padding: 8px 7px;
+            /* box-shadow: 10px 11px yellow; */
+            /* box-shadow: 10px 11px 36px yellow; */
+            /* box-shadow: 10px 11px 36px 32px yellow; */
+            /* here box-shadow: offset x,offset y,blur radious,spread radious */
+            /* box-shadow: 10px 11px 36px 32px rgb(247, 247, 92,0.5); */
+            /* 4th one(0.5) is alpha its used to how dark or light will be color  */
+            box-shadow: 5px 6px 22px 10px red, 15px 16px 21px 35px yellow;
+        }
+        .card h2{
+            color: black;
+            text-shadow:9px 7px 2px grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur velit ducimus aperiam ipsum commodi
+                aliquam asperiores illo, quisquam, aspernatur nesciunt dolor, repellendus reiciendis laborum cupiditate
+                rerum delectus repudiandae praesentium tempora?</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa cum fugiat fuga corporis temporibus
+                deleniti! Rem at quod adipisci aut autem eligendi reiciendis delectus? Quia, a. Totam est recusandae
+                corporis!</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis inventore suscipit
+                asperiores. Architecto nesciunt molestias, totam ullam eos obcaecati ipsum veritatis doloremque modi
+                illo quasi. Porro laborum saepe culpa!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

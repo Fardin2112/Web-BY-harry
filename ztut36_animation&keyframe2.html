@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation&keyframe</title>
+    <style>
+         .container{
+            background-color: black;
+        }
+        .box{
+            color: white;
+            border: 4px solid  black;
+            background-color:red;
+            position: relative;
+            width: 250px;
+            height: 250px;
+            animation-name: fardin1;
+            animation-duration:5s;
+            animation-iteration-count:2;
+            animation-fill-mode:alternate;
+            animation-timing-function: ease-in-out;
+            /* animation-delay: 3s; */
+            animation-direction: reverse;
+        } 
+        @keyframes fardin1{
+           0%{
+            top: 0px;
+            left: 0px;
+
+           }
+           25%{
+            top:250px;
+            left: 0px;
+
+           }
+           75%{
+            top: 250px;
+            left:250px;
+
+           }
+           100%{
+            top: 0px;
+            left: 250px;
+
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            i AM BOX
+        </div>
+    </div>
+    
+</body>
+</html>

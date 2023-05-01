@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling link</title>
+    <style>
+        .container{
+            border: 3px solid black;
+            background-color:yellow;
+            padding: 20px;
+            margin:50px auto;
+            width: 500px;
+
+        }
+        .h2{
+            font:larger;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .btn{
+            background-color:rgb(162, 232, 196);
+            border: 1px solid brown;
+            cursor:help;
+        }
+        button:hover{
+            color:blue;
+            background-color: white;
+        }
+         a{   
+            /*text decoration none used to remove under line */
+            text-decoration: none;
+            color: black;         
+        }
+        a:hover{
+            color: blue;
+            background-color: white;
+        }
+        a:visited{
+            color: red;
+        }
+        a:active{
+            /* when i click then this color will show */
+           color:green;
+        }
+    </style>
+</head>
+<body>
+
+     <div class="container" id="one">
+        <h3 class="h2">Heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, sed.</p>
+        <a href="" class="btn">Read us</a>
+        <button class="btn">Contact us</button>
+     </div>
+</body>
+</html>

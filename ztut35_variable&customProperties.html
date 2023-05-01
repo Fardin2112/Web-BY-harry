@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable&customProperties</title>
+    <style>
+        :root {
+            /* if here i define any color in variable thne its valid in all style
+           how to use variable->   using -- or any name then - then what you want to use  */
+            --primary-color: blue;
+            --secondary-color: green;
+            --danger-color: red;
+            --maxh-height:800px;
+            --maxh-width:300px;
+        }
+
+        .box {
+            /* here i define a color in --box-color so its become easy to use further but its only valid in this box cant use in another style */
+            --box-color: yellow;
+            border: 2px solid black;
+            /* width: 200px;
+            height: 200px; */
+            background-color: var(--box-color);
+            margin: 4px 23px;
+            padding: 3px 8px;
+            box-shadow: 2px 3px 4px var(--box-color);
+            height: var(--maxh-height);
+            width: var(--maxh-width);
+
+        }
+
+        .container {
+            display: flex;
+            background-color: var(--danger-color);
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+    </div>
+
+</body>
+
+</html>

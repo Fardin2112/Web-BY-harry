@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time In JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        Date is
+    </div>
+ <script>
+    // this will show current date and time in console
+    // let a = new Date ();
+    // console.log(a);
+ 
+    // filling the data in date will show the time after IST
+    // let b = new Date (0);
+    // console.log(b);
+
+    // by this u can search any day by writing this
+    // let newdate = new Date ("2023-12-21");
+    // console.log(newdate);
+
+    // let newdate = new Date (year,month,day,hour,minute,secand,milisecond);
+    // something is wrong
+    let newdate = new Date(2023,2,1,9,3,2,34);
+    console.log(newdate);
+    
+    let yr = newdate.getFullYear();
+    console.log(yr);
+    let mth = newdate.getMonth();
+    console.log(mth);
+    let day = newdate.getDay();
+    console.log(day);
+
+ </script>
+    
+</body>
+</html>

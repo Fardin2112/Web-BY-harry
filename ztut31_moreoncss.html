@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* i select div p so all paragraph that fall under div will set this style */
+        div p {
+            background-color: black;
+            color: white;
+        }
+        /*    > this is only applicable when li  direct child of div    */
+        div > li{
+            border: 2px solid black;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+            <li>this is headeing</li>
+            <ul>
+                <!-- here div li style will not work -->
+                <li>this is another heading</li>
+            </ul>
+              
+    </div>
+
+    <div>
+        <ul>
+            <!-- we can see that this p also follow div p style bec this p aldo as div p -->
+            <li>
+                <p>this is list paragraph</p>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <div>
+            <p>this is a paragraph</p>
+        </div>
+
+        <p>this is another paragraph</p>
+    </div>
+
+    <p>this is 3rd paragraph</p>
+    now i want style will only 
+
+</body>
+
+</html>

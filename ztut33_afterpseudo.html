@@ -1,0 +1,86 @@
+<!-- not understand yet discuss later  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseduo selector</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            /* background: url('https://www.sailblogs.com/sbgallery/pics/geogenyv_gmail_com/sbd4wvf3z/w/20160905_192459.jpg') no-repeat center
+            ; */
+        }
+        header::before{
+            background: url('https://www.sailblogs.com/sbgallery/pics/geogenyv_gmail_com/sbd4wvf3z/w/20160905_192459.jpg');
+            content: " ";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+       
+        a{
+            color:white;
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+            padding: 0px 44px;
+    margin: 0px 6px;
+        }
+        h2{
+            font-size: 3em;
+        }
+        p{
+            font-size: 1.5em;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar ul{
+            display: flex;      
+        }
+        section{
+            border: 2px solid white;
+            margin: 21px 90px;
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+            color: whitesmoke;
+
+        }
+        .design{
+            color: red;
+        }
+        /* section::before{
+            content:"This is content";
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2>Welcome to Our Website</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure error, magni saepe cumque, libero molestiae vel laudantium, fugit repellendus atque sit. Placeat impedit a reprehenderit, ea tempora accusantium facilis id natus minus odio officiis sapiente voluptate sit cum ipsam.</p>
+        </section>
+    </header>
+        
+   
+    
+</body>
+</html>

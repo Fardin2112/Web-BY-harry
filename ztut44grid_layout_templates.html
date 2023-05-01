@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Creating Layouts Using Grid Template Areat</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'foot foot foot foot' ;
+        }
+        .iteam{
+            border: 2px solid black;
+            background-color:chartreuse;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #foot{
+            grid-area: foot;
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="iteam">
+            Home about help contact
+        </div>
+        <div id="section" class="iteam">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos a est numquam commodi iure id doloribus distinctio nam voluptatum molestiae ipsam dolores vel accusamus quis, natus explicabo magnam enim voluptate odio minima quibusdam cum debitis mollitia sint. Unde fugit molestiae voluptatem cum ea fuga, nemo repudiandae magnam, rerum, at esse nisi beatae culpa reprehenderit sapiente. Quia ut culpa fugit excepturi obcaecati, qui labore commodi, mollitia quas tempore cumque sapiente incidunt nulla aperiam perferendis velit repudiandae maxime fuga dolorem! Nisi animi doloribus reprehenderit voluptates illo eum rerum numquam. Similique dolore fugit facere, nam asperiores, vitae atque porro aspernatur officiis explicabo dolor! Nesciunt pariatur atque cum corrupti sapiente quam voluptates, tenetur animi, quidem tempora odit repudiandae? Voluptatibus, repellat. Tempora tempore illo dicta sed vel sunt iste blanditiis alias, nesciunt dolores quo quasi neque laudantium sapiente sequi ducimus natus. Dolores quam aliquid quas cum possimus explicabo, commodi qui dolorum cumque eligendi quod dicta laudantium ullam facere quidem veritatis ut impedit, voluptatem quia ea atque sint molestias hic at. Provident voluptatem quod maiores tenetur, saepe possimus quaerat facere sit natus eaque odio tempore qui dolores dolorem sunt veritatis laboriosam reiciendis inventore molestias ex! Ullam consectetur officiis modi eaque dolore? Qui odio similique laudantium eveniet.
+        </div>
+        <div id="aside" class="iteam">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cum cumque voluptates quo quae maiores eaque ab non. Eos inventore sunt ipsa molestiae distinctio iusto quasi nesciunt, dolores illum incidunt sapiente vel beatae velit! Neque cum dicta error? Accusamus, corporis laboriosam! Nihil reprehenderit laboriosam, expedita asperiores eius culpa eaque commodi accusamus officiis labore, corporis sunt facere corrupti quos omnis maxime, totam dicta laborum sequi nulla et ex minus! Aut nisi ea expedita enim tempore natus necessitatibus quas perferendis, odio laboriosam temporibus, quaerat commodi nesciunt ipsum delectus porro mollitia. Dolorem iusto maiores unde natus perferendis quo accusantium aperiam corrupti aliquam consectetur!
+        </div>
+        <footer id="foot" class="iteam">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem officiis consequuntur quidem, amet facilis eum soluta, vero tempora, inventore excepturi ab! Fugit quod officiis quaerat adipisci illo beatae repudiandae autem?</p>
+        </footer>
+    </div>
+    
+    
+</body>
+</html>
