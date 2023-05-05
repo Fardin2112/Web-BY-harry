@@ -18,7 +18,13 @@ app.get('/',(req,res)=>{
     res.status(200).render('index',params)
 })
 app.post('/',(req,res)=>{
-    console.log(req.body)
+    Name = req.body.Name
+    age = req.body.age
+    gender = req.body.gender
+    address = req.body.address
+    about = req.body.about
+    let outputToWrite = `The name  of the client is ${Name},${age} year old,${gender},resident at ${address},More about him/her:${about}`
+    fs.writeFileSync('output.txt',outputToWrite)
     const params = {'message':'Your form has been sumbitted succesfully'}
     res.status(200).render('index',params)
 
