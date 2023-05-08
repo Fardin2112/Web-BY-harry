@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: 'Playfair Display', serif;
+       
+}
+#logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0px 60px 0px 8px;
+}
+#logo img{
+    height: 35px;
+    filter: invert(1);
+}
+#navbar{
+    background-color: rgb(83 83 83);
+    padding: 13px 0px;  
+    height: 3.5rem;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: none;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+    
+}
+#navbar li a{
+    text-decoration: none;
+    color: rgb(255 241 241);
+    font-size: 1.1rem;
+    padding: 13px 35px;
+    font-family: 'Sigmar', cursive;
+   
+    
+}
+#navbar li a:hover{
+       color: black;
+}
+#introSection{
+    color: rgb(250, 250, 250);
+    font-size :3rem;    
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Serif', serif;
+    /* justify-content: center; */
+    align-items: center;
+    height: 425px;
+    background-color: brown;
+    background: center / cover no-repeat url("/static/bg1.jpg");  
+}
+#introSection div.small{
+    font-size:1.5rem ;
+}
+#ourmission{
+    height: 275px;  
+}
+#ourmission h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    margin: 7px 0px ;
+}
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    background-color: #c3c3c3;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: larger;
+    width: 30%;
+    height: 200px;
+    margin: 15px 12px;
+}
+.card h3{
+    text-align: center;
+    margin: 6px 0px;
+    
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height:100px;
+    padding: 0 14px;
+}
+.card-img img{
+    height:inherit;
+    margin: 13px 6px 7px 1px;
+}
+.card-content p{
+    padding-top: 0 22px;
+}
+#sponsorSection{
+    height: 260px;
+    background-color: rgb(209, 209, 209);
+    
+}
+#sponsorSection h2{
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);  
+}
+#sponsors{
+    height: 160px;
+    max-width: 1000px;
+    margin: auto;
+}
+.comimg{
+    height: 80%;
+    margin: 20px;
+}  
+#footer{
+    height: 60px;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

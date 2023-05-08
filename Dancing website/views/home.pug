@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content  
+    section#introSection 
+      dic Welcome to Dance Academy 
+      div.small Dance to be Happy 
+    section#ourmission
+      h2 Our Mission
+      div.card
+        h3 Happiness
+        div.card-box
+           div.card-img 
+             img(src="/static/img/img5.webp")
+           div.card-content 
+             p It doesn’t matter If you are a professional dancer or not. Dance is a beautiful way to express your ideas and emotions.  
+      div.card
+        h3 New Friends
+        div.card-box
+           div.card-img 
+             img(src="/static/img/img1.jpg")
+           div.card-content 
+             p A comfortable, stress-free environment will make it easier to muster up the courage to say hello and strike up a conversation.are you ready?
+      div.card
+        h3 Mediation
+        div.card-box
+           div.card-img 
+             img(src="/static/img/img4.jpg")
+           div.card-content 
+             p Dance can be a form of meditation that helps improve your mental and emotional health by reducing stress        
+    section#sponsorSection 
+      h2 Our Sponsor 
+      div#sponsors 
+        img(src="/static/img/sp10.jpg", alt="sponsor image",class="comimg")
+        img(src="/static/img/sp7.png", alt="sponsor image",class="comimg")
+        img(src="/static/img/sp8.jpg", alt="sponsor image",class="comimg")
+        img(src="/static/img/sp9.jpg", alt="sponsor image",class="comimg")
+        img(src="/static/img/sp6.jpg", alt="sponsor image",class="comimg")
