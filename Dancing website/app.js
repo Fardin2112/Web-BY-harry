@@ -1,20 +1,23 @@
 const express  = require("express")
 const path = require("path");
 const app=express();
+const mongoose=require("mongoose");
 const bodyparser = require("body-parser");
 // getting-started.js
-var MongoClient = require('mongodb').MongoClient;
-
-//Create a database named "mydb":
-var url = "mongodb://localhost:27017/mydb";
-
-MongoClient.connect(url, function(err, db) {
-  if (err) throw err;
-  console.log("Database created!");
-  db.close();
-});
-
 const port = 8000;
+const url =
+    "mongodb+srv://admin:pass@cluster0.vklwrjd.mongodb.net/?retryWrites=true&w=majority"
+
+async function connect(){
+    try {
+      await mongoose.connect(url)
+      console.log("connected");
+    } catch(err){
+      console.log(error);
+    }
+}  
+
+connect();
 
 //define mongoose schema
 const contactSchema = new mongoose.Schema({
